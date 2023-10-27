@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        function setname(){
+            document.getElementById("name").innerHTML=document.getElementById("nameinput").value;
+
+        }
+        function setimg(){
+            document.getElementById("pfp").style.backgroundImage="url(" + document.getElementById("setpfp").value + ")";
+        
+        }
+    </script>
+</head>
+<body>
+    <main>
+    <div class="parent" id="pfp">
+        <div class="child"></div>
+    </div>
+        <a id="name" href="https://www.google.com/search?q=google+map&oq=g&gs_lcrp=EgZjaHJvbWUqDQgFEAAYgwEYsQMYgAQyBggAEEUYOzINCAEQLhjHARjRAxiABDITCAIQLhiDARjHARixAxjRAxiABDIGCAMQRRg5Mg0IBBAAGIMBGLEDGIAEMg0IBRAAGIMBGLEDGIAEMg0IBhAAGIMBGLEDGIAEMg0IBxAAGIMBGLEDGIAEMgcICBAAGIAEMgcICRAAGI8C0gEJODE2NmowajE1qAIAsAIA&sourceid=chrome&ie=UTF-8" itemid="profile-link">My pro</a>
+        <div class="row">
+            <div class="button"><label>Set the username</label>
+             <input type="text" id="nameinput"/>   
+             <button id ="setname" onclick="setname()">Click</button>
+        </div><div>
+            <label>Set propfile image</label>
+            <input id="setpfp" type="text">
+            <button onclick="setimg()">Click</button>
+        </div>
+     <div class="gallery">
+        <div class="image"></div>
+        <div class="image"></div>
+        <div class="image"></div>
+        <div class="image"></div>
+        <div class="image"></div>
+        <div class="image"></div>
+     </div>
+    </main>
+  </body>
+</html>

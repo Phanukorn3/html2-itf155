@@ -1,0 +1,77 @@
+main {
+    width: 1024px;
+    min-height: 100vh;
+    border: 2px black solid;
+    margin: 0px auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+}
+
+.parent {
+    background-color: red;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    margin-top: 60px;
+    border-radius: 9999px;
+    background-image: url("https://i.natgeofe.com/n/4f5aaece-3300-41a4-b2a8-ed2708a0a27c/domestic-dog_thumb_square.jpg");
+}
+
+.child{
+    background-color: aquamarine;
+    bottom: 0;
+    border-radius: 100%;
+    position: absolute;
+    width: 75px;
+    height: 75px;
+
+}
+
+p {
+    margin: 0px;
+}
+
+.row {
+    flex: auto;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 20px;
+
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 300px);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt-poiYp4oZo0gGE-U-dpsokt-tI4CBnFoNj6guUDY_yIJ8aoJDU4T0UphzQFgUtOiY2I&usqp=CAU);
+}
+
+#extend-col {
+    grid-column: span 2;
+    grid-row: span 2;
+    grid-column-start:  2;
+    grid-column-end: 2;
+    background-color: blue;
+}
+
+#extend-row {
+    grid-row: span 2;
+    background-color: brown;
+}
+
